@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Real-Time Chat</title>
+    <script src="Scripts/jquery-3.7.1.min.js"></script>
+    <script src="Scripts/jquery.signalR-2.4.3.min.js"></script>
+    <script src="/signalr/hubs"></script>
+    <script>
+        $(function () {
+            var chat = $.connection.chatHub;
+            chat.client.broadcastMessage = function (name, message) {
+                var encodedName = $('<div />').text(name).html();
+                var encodedMsg = $('<div />').text(message).html();
+                $('#discussion').append('<li><strong>' + encodedName + '</strong>: ' + encodedMsg + '</li>');
+            };
+            $.connection.hub.start().done(function () {
+                // Updated to use .on() for event handling
+                $(document).on('click', '#sendmessage', function () {
+                    chat.server.send($('#displayname').val(), $('#message').val());
+                    $('#message').val('').focus();
+                });
+                $(document).on('focus', '#message', function () {
+                    // If you need any focus-specific code, it can go here
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="text" id="displayname" placeholder="Your Name" />
+    <input type="text" id="message" placeholder="Your Message" />
+    <input type="button" id="sendmessage" value="Send" />
+    <ul id="discussion"></ul>
+</body>
+</html>
