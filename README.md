@@ -24,8 +24,8 @@ Before you can run this application, you'll need:
 ## Setup and Installation 🔧
 1. **Clone the repository** to your local machine:
    ```bash
-   git clone https://github.com/satyasn01/RealTimeChat.git
-   ```
+[   git clone https://github.com/satyasn01/RealTimeChat.git
+](https://github.com/Satyasn01/RealTimeChat.git)   ```
 2. **Open the solution file** (`RealTimeChat.sln`) in Visual Studio.
 3. **Build the solution** to restore all necessary NuGet packages.
 4. **Run the application** using IIS Express through Visual Studio by pressing `F5`.
