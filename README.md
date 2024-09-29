@@ -24,11 +24,11 @@ Before you can run this application, you'll need:
 ## Setup and Installation 🔧
 1. **Clone the repository** to your local machine:
    ```bash
-[   git clone https://github.com/satyasn01/RealTimeChat.git
-](https://github.com/Satyasn01/RealTimeChat.git)   ```
-2. **Open the solution file** (`RealTimeChat.sln`) in Visual Studio.
-3. **Build the solution** to restore all necessary NuGet packages.
-4. **Run the application** using IIS Express through Visual Studio by pressing `F5`.
+   git clone https://github.com/Satyasn01/RealTimeChat.git
+   ```
+3. **Open the solution file** (`RealTimeChat.sln`) in Visual Studio.
+4. **Build the solution** to restore all necessary NuGet packages.
+5. **Run the application** using IIS Express through Visual Studio by pressing `F5`.
 
 ## Usage 💡
 - Navigate to the application in your web browser.
@@ -55,6 +55,6 @@ Contributions are what make the open-source community such an amazing place to l
 Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact 📧
-Satya Subham Nayak – [@your_twitter](https://twitter.com/satyasn__)
+Satya Subham Nayak – [@satyasn__](https://twitter.com/satyasn__)
 
-Project Link: [https://github.com/your-username/your-project-name](https://github.com/your-username/your-project-name)
+Project Link: https://github.com/Satyasn01/RealTimeChat
